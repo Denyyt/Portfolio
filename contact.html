@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Deny Yudha Taruna</title>
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="index.html" class="logo">DYT</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <!-- contact page section -->
+    <section class="contact-page" id="contact-page">
+        <h2 class="heading">Get In <span>Touch</span></h2>
+
+        <div class="contact-container">
+            
+            <!-- Communications Links -->
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <i class="bx bxl-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>Fastest way to reach me for quick discussions.</p>
+                    <a href="https://wa.me/6287771336255?text=Halo%20Deny,%20saya%20tertarik%20dengan%20portofolio%20Anda." target="_blank" rel="noopener noreferrer" class="btn">Chat on WhatsApp</a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="bx bx-envelope"></i>
+                    <h3>Email</h3>
+                    <p>For formal inquiries and detailed project briefs.</p>
+                    <a href="mailto:dyudha287060@gmail.com" class="email-link">dyudha287060@gmail.com</a>
+                    <button type="button" class="copy-btn" onclick="copyEmail()">
+                        <i class="bx bx-copy"></i> Copy Email
+                    </button>
+                </div>
+            </div>
+
+            <!-- Social Links Section -->
+            <div class="social-connect">
+                <h3>Connect with me professionally:</h3>
+                <div class="social-media">
+                    <a href="https://github.com/Denyyt" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.instagram.com/deny_yt" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer section design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by Deny Yudha Taruna | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#contact-page" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- custom js for copy email functionality -->
+    <script>
+        function copyEmail() {
+            navigator.clipboard.writeText("dyudha287060@gmail.com");
+            const btn = document.querySelector('.copy-btn');
+            const originalIcon = "<i class='bx bx-copy'></i> Copy Email";
+            
+            btn.innerHTML = "<i class='bx bx-check'></i> Copied!";
+            btn.style.color = "#2ecc71";
+            btn.style.borderColor = "#2ecc71";
+            
+            setTimeout(() => {
+                btn.innerHTML = originalIcon;
+                btn.style.color = "var(--text-color)";
+                btn.style.borderColor = "rgba(255, 255, 255, 0.2)";
+            }, 2000);
+        }
+    </script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
