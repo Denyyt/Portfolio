@@ -108,7 +108,6 @@ span { color: var(--main-color); }
 .tool-info { display: flex; justify-content: space-between; align-items: center; }
 .tool-info span:first-child { font-size: 1.5rem; font-weight: 500; }
 
-/* Badges Level Skill (3 Level) */
 .badge { font-size: 1.2rem; padding: 0.4rem 1rem; border-radius: 2rem; font-weight: 600; text-transform: capitalize; }
 .badge.advanced { background: rgba(0, 238, 255, 0.2); color: var(--main-color); border: 0.1rem solid var(--main-color); }
 .badge.intermediate { background: rgba(46, 204, 113, 0.2); color: #2ecc71; border: 0.1rem solid #2ecc71; }
