@@ -1,4 +1,5 @@
 # 🎨 Deny Yudha Taruna — Personal Portfolio Website
+
 <!-- 1. OVERVIEW -->
 Welcome to the repository of **Deny Yudha Taruna's** personal portfolio website! This project presents a modern, dark-themed showcase of creative works, skills, and case studies in **UI/UX Design** and **Game Design**.
 
@@ -23,5 +24,7 @@ Welcome to the repository of **Deny Yudha Taruna's** personal portfolio website!
 * `style.css` — Global styling, layout variables & responsive queries
 * `script.js` — Navigation logic, libraries setup & interactive utilities
 * `img/` — Visual assets and project mockups
+
+---
 
 _Note: This portfolio website is still under development (ongoing development). The content, some image assets, project case studies, and detailed functionality testing will continue to be updated and optimized on a regular basis._

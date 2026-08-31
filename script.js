@@ -16,7 +16,10 @@ if (menuIcon && navbar) {
 // Sticky Header & Active Nav Link saat Scroll
 window.addEventListener('scroll', () => {
     const top = window.scrollY;
-    if (header) header.classList.toggle('sticky', top > 100);
+
+    if (header) {
+        header.classList.toggle('sticky', top > 100);
+    }
 
     if (sections.length > 0) {
         sections.forEach(sec => {
@@ -28,14 +31,16 @@ window.addEventListener('scroll', () => {
                 navLinks.forEach(link => {
                     link.classList.remove('active');
                     const href = link.getAttribute('href');
-                    if (id && href?.includes(id)) link.classList.add('active');
+                    if (id && href?.includes(id)) {
+                        link.classList.add('active');
+                    }
                 });
             }
         });
     }
 });
 
-// Tutup Navbar saat Link Diklik
+// Tutup Navbar saat Link Navigasi Diklik
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         menuIcon?.classList.remove('bx-x');
@@ -45,10 +50,17 @@ navLinks.forEach(link => {
 
 /* ==================== 2. ANIMASI SCROLL REVEAL ==================== */
 if (typeof ScrollReveal !== 'undefined') {
-    const sr = ScrollReveal({ distance: '80px', duration: 1500, delay: 150 });
+    const sr = ScrollReveal({
+        distance: '80px',
+        duration: 1500,
+        delay: 150
+    });
 
     sr.reveal('.home-content, .heading', { origin: 'top' });
-    sr.reveal('.home-img, .skills-container, .portfolio-container, .contact-content, .skills-detail-container, .contact-cards', { origin: 'bottom' });
+    sr.reveal(
+        '.home-img, .skills-container, .portfolio-container, .contact-content, .skills-detail-container, .contact-cards',
+        { origin: 'bottom' }
+    );
     sr.reveal('.social-connect', { origin: 'bottom', delay: 300 });
     sr.reveal('.home-content h1, .about-img', { origin: 'left' });
     sr.reveal('.home-content p, .about-content', { origin: 'right' });
@@ -58,7 +70,10 @@ if (typeof ScrollReveal !== 'undefined') {
 if (document.querySelector('.multiple-text') && typeof Typed !== 'undefined') {
     new Typed('.multiple-text', {
         strings: ['UI/UX Designer', 'Game Designer'],
-        typeSpeed: 100, backSpeed: 100, backDelay: 1000, loop: true
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
     });
 }
 
@@ -71,6 +86,7 @@ if (filterBtns.length && portfolioCards.length) {
         btn.addEventListener('click', () => {
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
+            
             const val = btn.getAttribute('data-filter');
 
             portfolioCards.forEach(card => {
@@ -84,11 +100,13 @@ if (filterBtns.length && portfolioCards.length) {
 /* ==================== 5. UTILITY: COPY EMAIL ==================== */
 function copyEmail() {
     navigator.clipboard.writeText("dyudha287060@gmail.com");
+    
     const btn = document.querySelector('.copy-btn');
     if (!btn) return;
     
     btn.innerHTML = "<i class='bx bx-check'></i> Copied!";
-    btn.style.color = btn.style.borderColor = "#2ecc71";
+    btn.style.color = "#2ecc71";
+    btn.style.borderColor = "#2ecc71";
     
     setTimeout(() => {
         btn.innerHTML = "<i class='bx bx-copy'></i> Copy Email";
