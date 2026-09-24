@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-/* ==================== 1. VARIABLES & RESET ==================== */
+/* ==========================================================================
+   1. VARIABLES & RESET
+   ========================================================================== */
 :root {
     --bg-color: #1f242d;
     --second-bg-color: #323946;
@@ -37,19 +39,15 @@ span {
     color: var(--main-color);
 }
 
-/* ==================== 2. HELPER & REUSABLE CLASSES ==================== */
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* ==========================================================================
+   2. SHARED COMPONENTS
+   ========================================================================== */
 .heading {
     text-align: center;
     font-size: 4.5rem;
 }
 
-/* Global Card Container Base */
+/* Card base (shared by skills, portfolio and contact cards) */
 .skills-box,
 .skills-detail-box,
 .portfolio-card,
@@ -71,7 +69,7 @@ span {
     transform: translateY(-0.5rem);
 }
 
-/* Global Buttons & Links */
+/* Buttons */
 .btn,
 .btn-link {
     display: inline-flex;
@@ -100,7 +98,7 @@ span {
     border-radius: 2rem;
 }
 
-/* Global Social Icons */
+/* Social icons */
 .social-media a,
 .social-connect .social-media a {
     display: inline-flex;
@@ -125,7 +123,9 @@ span {
     border-color: var(--main-color);
 }
 
-/* ==================== 3. HEADER & NAVBAR ==================== */
+/* ==========================================================================
+   3. HEADER & NAVBAR
+   ========================================================================== */
 .header {
     position: fixed;
     top: 0;
@@ -167,7 +167,10 @@ span {
     display: none;
 }
 
-/* ==================== 4. HOME & ABOUT SECTION ==================== */
+/* ==========================================================================
+   4. HOME & ABOUT SECTION
+   ========================================================================== */
+/* --- Home --- */
 .home {
     display: flex;
     justify-content: center;
@@ -213,6 +216,7 @@ span {
     text-align: justify;
 }
 
+/* --- About --- */
 .about {
     display: flex;
     justify-content: center;
@@ -258,6 +262,7 @@ span {
     color: var(--main-color);
 }
 
+/* --- Education box (About page) --- */
 .education-box {
     margin-bottom: 3rem;
 }
@@ -292,7 +297,10 @@ span {
     opacity: 0.85;
 }
 
-/* ==================== 5. SKILLS SECTION ==================== */
+/* ==========================================================================
+   5. SKILLS SECTION
+   ========================================================================== */
+/* --- Skills preview (Home page) --- */
 .skills h2 {
     margin-bottom: 2rem;
 }
@@ -324,6 +332,7 @@ span {
     margin: 1rem 0 3rem;
 }
 
+/* --- Inner pages: shared top/bottom spacing --- */
 .skills-page,
 .portfolio-page,
 .contact-page {
@@ -331,6 +340,7 @@ span {
     padding-bottom: 5rem;
 }
 
+/* --- Shared grid: Skills page and Portfolio page --- */
 .skills-detail-container,
 .portfolio-grid {
     display: grid;
@@ -339,6 +349,7 @@ span {
     margin-top: 3rem;
 }
 
+/* --- Skills page: detail cards --- */
 .skills-detail-box {
     padding: 3rem 2.5rem;
 }
@@ -412,6 +423,7 @@ span {
     font-weight: 500;
 }
 
+/* --- Skills page: level badges --- */
 .badge {
     font-size: 1.2rem;
     padding: 0.4rem 1rem;
@@ -438,7 +450,10 @@ span {
     border: 0.1rem solid #f1c40f;
 }
 
-/* ==================== 6. PORTFOLIO SECTION ==================== */
+/* ==========================================================================
+   6. PORTFOLIO SECTION
+   ========================================================================== */
+/* --- Portfolio preview (Home page) --- */
 .portfolio {
     background: var(--second-bg-color);
 }
@@ -518,6 +533,7 @@ span {
     color: var(--second-bg-color);
 }
 
+/* --- Portfolio page: filter buttons --- */
 .portfolio-filter {
     display: flex;
     justify-content: center;
@@ -545,6 +561,7 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
+/* --- Portfolio page: project cards --- */
 .portfolio-card {
     overflow: hidden;
     display: flex;
@@ -629,7 +646,10 @@ span {
     margin-top: auto;
 }
 
-/* ==================== 7. CONTACT SECTION ==================== */
+/* ==========================================================================
+   7. CONTACT SECTION
+   ========================================================================== */
+/* --- Contact: shared layout (Home and Contact page) --- */
 .contact,
 .contact-page {
     display: flex;
@@ -656,6 +676,7 @@ span {
     line-height: 1.6;
 }
 
+/* --- Contact page: cards and buttons --- */
 .contact-container {
     max-width: 80rem;
     width: 100%;
@@ -680,7 +701,7 @@ span {
     gap: 1.5rem;
 }
 
-/* Icon Utama Card Contact */
+/* Main card icon */
 .contact-card > i {
     font-size: 5rem;
     color: var(--main-color);
@@ -723,7 +744,7 @@ span {
     transition: 0.3s;
 }
 
-/* Icon Copy Email Kecil & Abu-abu */
+/* Small grey copy icon */
 .copy-btn i {
     font-size: 1.5rem;
     color: #a0a0a0;
@@ -739,6 +760,7 @@ span {
     color: var(--main-color);
 }
 
+/* --- Contact page: social links --- */
 .social-connect {
     text-align: center;
     margin-top: 2rem;
@@ -759,7 +781,9 @@ span {
     margin: 0 1rem;
 }
 
-/* ==================== 8. FOOTER ==================== */
+/* ==========================================================================
+   8. FOOTER
+   ========================================================================== */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -790,13 +814,17 @@ span {
     color: var(--second-bg-color);
 }
 
-/* ==================== 9. MEDIA QUERIES ==================== */
+/* ==========================================================================
+   9. MEDIA QUERIES
+   ========================================================================== */
+/* --- Laptop and below --- */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
 }
 
+/* --- Tablet landscape and below --- */
 @media (max-width: 991px) {
     .header,
     section,
@@ -811,6 +839,7 @@ span {
     }
 }
 
+/* --- Tablet portrait and below: mobile menu, stacked layout --- */
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
@@ -838,8 +867,7 @@ span {
         margin: 3rem 0;
     }
 
-    .home,
-    .about {
+    .home {
         flex-direction: column;
     }
 
@@ -858,18 +886,21 @@ span {
     }
 }
 
+/* --- Large phones and below --- */
 @media (max-width: 617px) {
     .portfolio-container {
         grid-template-columns: 1fr;
     }
 }
 
+/* --- Phones and below --- */
 @media (max-width: 450px) {
     html {
         font-size: 50%;
     }
 }
 
+/* --- Small phones --- */
 @media (max-width: 365px) {
     .home-img img,
     .about-img img {

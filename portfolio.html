@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- 1. META & RESOURCES -->
+    <!-- ==================== 1. HEAD ==================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Deny Yudha Taruna</title>
 
-    <!-- External Fonts & Icons -->
+    <!-- Icons (Boxicons) -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    
-    <!-- Custom Stylesheet -->
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 2. HEADER & NAVIGATION -->
+    <!-- ==================== 2. HEADER & NAVIGATION ==================== -->
     <header class="header">
         <a href="index.html" class="logo">DYT</a>
         <i class="bx bx-menu" id="menu-icon"></i>
-        
+
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -28,11 +28,11 @@
         </nav>
     </header>
 
-    <!-- 3. PORTFOLIO FILTER & GRID SECTION -->
+    <!-- ==================== 3. PORTFOLIO ==================== -->
     <section class="portfolio-page" id="portfolio-page">
         <h2 class="heading">My <span>Portfolio</span> & Case Studies</h2>
 
-        <!-- Filter Controls -->
+        <!-- Filter buttons (data-filter must match a card's data-category) -->
         <div class="portfolio-filter">
             <button class="filter-btn active" data-filter="all">All Projects</button>
             <button class="filter-btn" data-filter="uiux">UI/UX App</button>
@@ -40,9 +40,9 @@
             <button class="filter-btn" data-filter="graphic">Graphic / Banner</button>
         </div>
 
-        <!-- Portfolio Cards -->
+        <!-- Project cards -->
         <div class="portfolio-grid">
-            <!-- Project 1 -->
+            <!-- Project 1: Food App (UI/UX) -->
             <div class="portfolio-card" data-category="uiux">
                 <div class="card-img">
                     <img src="img/portfolio2.png" alt="Food App Mobile UI/UX Design">
@@ -51,7 +51,7 @@
                 <div class="card-content">
                     <h3>Food App Mobile UI/UX</h3>
                     <p class="summary">Mobile application design concept for ordering food with clean layout and intuitive navigation.</p>
-                    
+
                     <div class="case-study-info">
                         <div class="info-item">
                             <i class="bx bx-user"></i>
@@ -66,7 +66,7 @@
                             <span><strong>Tools:</strong> Figma</span>
                         </div>
                     </div>
-                    
+
                     <div class="card-links">
                         <a href="https://www.figma.com/design/qOjXR8CEjXPbCh7ifyFQJV/Food-App?node-id=0-1&t=zqjLqGYZjRljmaUx-1" target="_blank" rel="noopener" class="btn-link">
                             <i class="bx bx-link-external"></i> View Design
@@ -75,7 +75,7 @@
                 </div>
             </div>
 
-            <!-- Project 2 -->
+            <!-- Project 2: NanoVerse Banner (Graphic) -->
             <div class="portfolio-card" data-category="graphic">
                 <div class="card-img">
                     <img src="img/portfolio1.png" alt="NanoVerse Graphic Banner Concept">
@@ -84,7 +84,7 @@
                 <div class="card-content">
                     <h3>NanoVerse Graphic Banner</h3>
                     <p class="summary">Visual graphic and promotional banner design concept styled with a modern futuristic theme.</p>
-                    
+
                     <div class="case-study-info">
                         <div class="info-item">
                             <i class="bx bx-user"></i>
@@ -108,7 +108,7 @@
                 </div>
             </div>
 
-            <!-- Project 3 -->
+            <!-- Project 3: Fantasy RPG Game Menu (Game Design) -->
             <div class="portfolio-card" data-category="game">
                 <div class="card-img">
                     <img src="img/portfolio3.png" alt="Fantasy RPG Game Menu UI Concept">
@@ -117,7 +117,7 @@
                 <div class="card-content">
                     <h3>Fantasy RPG Game Menu UI</h3>
                     <p class="summary">Intuitive menu interface design inspired by Genshin Impact, focusing on clean iconography.</p>
-                    
+
                     <div class="case-study-info">
                         <div class="info-item">
                             <i class="bx bx-user"></i>
@@ -133,6 +133,7 @@
                         </div>
                     </div>
 
+                    <!-- Design link not set yet -->
                     <div class="card-links">
                         <a href="#" target="_blank" rel="noopener" class="btn-link">
                             <i class="bx bx-link-external"></i> View Design
@@ -143,7 +144,7 @@
         </div>
     </section>
 
-    <!-- 4. FOOTER -->
+    <!-- ==================== 4. FOOTER ==================== -->
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2026 by Deny Yudha Taruna | All Rights Reserved.</p>
@@ -153,7 +154,7 @@
         </div>
     </footer>
 
-    <!-- 5. EXTERNAL SCRIPTS -->
+    <!-- ==================== 5. SCRIPTS ==================== -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
