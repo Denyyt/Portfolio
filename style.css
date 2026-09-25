@@ -518,6 +518,20 @@ span {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
+/* Added: dark outline on portfolio-layer text so white text stays readable
+   on bright/light thumbnail backgrounds. Purely additive, no existing
+   rules above were changed. */
+.portfolio-layer h4,
+.portfolio-layer p {
+    -webkit-text-stroke: 0.05rem rgba(0, 0, 0, 0.85);
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.8),
+        -0.1rem -0.1rem 0 rgba(0, 0, 0, 0.7),
+        0.1rem -0.1rem 0 rgba(0, 0, 0, 0.7),
+        -0.1rem 0.1rem 0 rgba(0, 0, 0, 0.7),
+        0.1rem 0.1rem 0 rgba(0, 0, 0, 0.7);
+}
+
 .portfolio-layer a {
     display: inline-flex;
     justify-content: center;
